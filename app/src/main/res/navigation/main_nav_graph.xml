@@ -46,5 +46,22 @@
         android:id="@+id/chooseReceiverFragment"
         android:name="com.codeinglogs.navigationcomponent.ChooseReceiverFragment"
         android:label="fragment_choose_receiver"
-        tools:layout="@layout/fragment_choose_receiver" />
+        tools:layout="@layout/fragment_choose_receiver" >
+        <action
+            android:id="@+id/action_chooseReceiverFragment_to_sendCaseFragment"
+            app:destination="@id/sendCaseFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/sendCaseFragment"
+        android:name="com.codeinglogs.navigationcomponent.SendCaseFragment"
+        android:label="fragment_send_case"
+        tools:layout="@layout/fragment_send_case" >
+        <argument
+            android:name="receiverName"
+            app:argType="string" />
+    </fragment>
 </navigation>
