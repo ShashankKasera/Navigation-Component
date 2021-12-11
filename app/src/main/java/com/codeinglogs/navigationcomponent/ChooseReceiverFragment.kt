@@ -27,6 +27,10 @@ class ChooseReceiverFragment : Fragment(R.layout.fragment_choose_receiver) {
             navController.navigate(action)
         }
 
+        Binding.btnCancel.setOnClickListener {
+            navController.popBackStack()
+        }
+
         return  Binding.root
     }
 

@@ -25,11 +25,19 @@ class SendCaseFragment : Fragment(R.layout.fragment_send_case) {
         Binding = FragmentSendCaseBinding.inflate(layoutInflater,container,false)
         val navController=findNavController()
         val receiverName=args.receiverName
-        val amount=Binding.etAmount.text.toString()
+
         Binding.tvReceiver.text="Send case to ${receiverName}"
         Binding.btnSend.setOnClickListener {
             val action=SendCaseFragmentDirections.actionSendCaseFragmentToConfirmDialogFragment(receiverName,Binding.etAmount.text.toString())
             navController.navigate(action)
+        }
+        Binding.btnDone.setOnClickListener {
+            val action=SendCaseFragmentDirections.actionSendCaseFragmentToHomeFragment()
+            navController.navigate(action)
+        }
+
+        Binding.btnCancel.setOnClickListener {
+            navController.popBackStack(R.id.homeFragment,false)
         }
         return  Binding.root
     }
