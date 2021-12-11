@@ -1,6 +1,7 @@
 package com.codeinglogs.navigationcomponent
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,8 +23,14 @@ class SendCaseFragment : Fragment(R.layout.fragment_send_case) {
         savedInstanceState: Bundle?
     ): View? {
         Binding = FragmentSendCaseBinding.inflate(layoutInflater,container,false)
+        val navController=findNavController()
         val receiverName=args.receiverName
+        val amount=Binding.etAmount.text.toString()
         Binding.tvReceiver.text="Send case to ${receiverName}"
+        Binding.btnSend.setOnClickListener {
+            val action=SendCaseFragmentDirections.actionSendCaseFragmentToConfirmDialogFragment(receiverName,Binding.etAmount.text.toString())
+            navController.navigate(action)
+        }
         return  Binding.root
     }
 }

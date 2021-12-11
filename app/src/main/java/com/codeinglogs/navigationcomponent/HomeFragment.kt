@@ -6,13 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.codeinglogs.navigationcomponent.databinding.FragmentChooseReceiverBinding
 import com.codeinglogs.navigationcomponent.databinding.FragmentHomeBinding
-
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
-    lateinit var Binding: FragmentHomeBinding
+    lateinit var Binding:FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
