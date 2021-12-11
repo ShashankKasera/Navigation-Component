@@ -88,4 +88,8 @@
             android:name="amount"
             app:argType="string" />
     </dialog>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.codeinglogs.navigationcomponent.settingFragment"
+        android:label="Setting" />
 </navigation>

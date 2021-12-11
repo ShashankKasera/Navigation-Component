@@ -26,6 +26,11 @@ class SendCaseFragment : Fragment(R.layout.fragment_send_case) {
         val navController=findNavController()
         val receiverName=args.receiverName
 
+        Binding.etAmount.setText(SampleData.defaultAmount.value.toString())
+        SampleData.defaultAmount.observe(viewLifecycleOwner){
+            Binding.etAmount.setText(it.toString())
+        }
+
         Binding.tvReceiver.text="Send case to ${receiverName}"
         Binding.btnSend.setOnClickListener {
             val action=SendCaseFragmentDirections.actionSendCaseFragmentToConfirmDialogFragment(receiverName,Binding.etAmount.text.toString())
