@@ -12,7 +12,7 @@ import com.codeinglogs.navigationcomponent.databinding.FragmentSettingBinding
 import com.codeinglogs.navigationcomponent.databinding.FragmentViewBalanceBinding
 
 
-class AboutAppFragment : Fragment(R.layout.fragment_about_app) {
+class AboutAppFragment : Fragment() {
 
     lateinit var Binding: FragmentAboutAppBinding
 

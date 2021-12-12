@@ -13,7 +13,7 @@ import com.codeinglogs.navigationcomponent.databinding.FragmentHomeBinding
 import com.codeinglogs.navigationcomponent.databinding.FragmentSendCaseBinding
 
 
-class SendCaseFragment : Fragment(R.layout.fragment_send_case) {
+class SendCaseFragment : Fragment() {
 
     lateinit var Binding: FragmentSendCaseBinding
 

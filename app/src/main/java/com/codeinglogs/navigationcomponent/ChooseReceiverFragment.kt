@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.codeinglogs.navigationcomponent.databinding.FragmentChooseReceiverBinding
 
 
-class ChooseReceiverFragment : Fragment(R.layout.fragment_choose_receiver) {
+class ChooseReceiverFragment : Fragment() {
 
     lateinit var Binding:FragmentChooseReceiverBinding
 

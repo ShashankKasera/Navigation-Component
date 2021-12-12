@@ -30,7 +30,7 @@ class SettingFragment : Fragment(R.layout.fragment_setting) {
         }
 
         Binding.btnAboutApp.setOnClickListener {
-            val action =SettingFragmentDirections.actionGlobalAboutAppFragment()
+            val action =SettingFragmentDirections.actionSettingFragmentToAboutAppFragment()
             navController.navigate(action)
         }
          return  Binding.root

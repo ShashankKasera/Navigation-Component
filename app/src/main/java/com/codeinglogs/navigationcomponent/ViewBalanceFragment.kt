@@ -9,7 +9,7 @@ import com.codeinglogs.navigationcomponent.databinding.FragmentChooseReceiverBin
 import com.codeinglogs.navigationcomponent.databinding.FragmentViewBalanceBinding
 
 
-class ViewBalanceFragment : Fragment(R.layout.fragment_view_balance) {
+class ViewBalanceFragment : Fragment() {
 
     lateinit var Binding: FragmentViewBalanceBinding
 

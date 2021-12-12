@@ -9,7 +9,7 @@ import com.codeinglogs.navigationcomponent.databinding.FragmentViewBalanceBindin
 import com.codeinglogs.navigationcomponent.databinding.FragmentViewTransactionBinding
 
 
-class ViewTransactionFragment : Fragment(R.layout.fragment_view_transaction) {
+class ViewTransactionFragment : Fragment() {
 
 
     lateinit var Binding: FragmentViewTransactionBinding

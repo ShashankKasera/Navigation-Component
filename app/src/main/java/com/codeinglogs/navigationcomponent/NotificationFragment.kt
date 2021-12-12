@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.codeinglogs.navigationcomponent.databinding.*
 
 
-class NotificationFragment : Fragment(R.layout.fragment_notification) {
+class NotificationFragment : Fragment() {
 
     lateinit var Binding: FragmentNotificationBinding
 
