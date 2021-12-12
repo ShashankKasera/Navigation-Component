@@ -95,7 +95,7 @@
     <fragment
         android:id="@+id/aboutAppFragment"
         android:name="com.codeinglogs.navigationcomponent.AboutAppFragment"
-        android:label="fragment_about_app"
+        android:label="About App"
         tools:layout="@layout/fragment_about_app" />
     <action android:id="@+id/action_global_aboutAppFragment"
         app:destination="@id/aboutAppFragment"
@@ -103,4 +103,9 @@
         app:exitAnim="@anim/slide_out_left"
         app:popEnterAnim="@anim/slide_in_left"
         app:popExitAnim="@anim/slide_out_right"/>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.codeinglogs.navigationcomponent.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
 </navigation>
