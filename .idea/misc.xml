@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/Documents/shashankcode/NavigationComponent/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/User/Documents/shashankcode/NavigationComponent/app/src/main/res/layout/activity_main.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/User/Documents/shashankcode/NavigationComponent/app/src/main/res/layout/fragment_about_app.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/User/Documents/shashankcode/NavigationComponent/app/src/main/res/layout/fragment_choose_receiver.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/User/Documents/shashankcode/NavigationComponent/app/src/main/res/layout/fragment_confirm_dialog.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/User/Documents/shashankcode/NavigationComponent/app/src/main/res/layout/fragment_home.xml" value="0.20260416666666667" />

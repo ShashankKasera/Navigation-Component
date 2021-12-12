@@ -8,4 +8,13 @@
         android:menuCategory="secondary"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/item_about_app"
+        android:title="About app"
+        android:menuCategory="secondary"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:iconTint="@color/white"
+        />
 </menu>
